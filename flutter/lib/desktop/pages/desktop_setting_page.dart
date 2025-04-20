@@ -52,12 +52,12 @@ class _TabInfo {
 enum SettingsTabKey {
   general,
   safety,
-  network,
+  // network,
   display,
-  plugin,
-  account,
-  printer,
-  about,
+  // plugin,
+  // account,
+  // printer,
+  // about,
 }
 
 class DesktopSettingPage extends StatefulWidget {
@@ -189,10 +189,10 @@ class _DesktopSettingPageState extends State<DesktopSettingPage>
         //   settingTabs
         //       .add(_TabInfo(tab, 'Network', Icons.link_outlined, Icons.link));
         //   break;
-        // case SettingsTabKey.display:
-        //   settingTabs.add(_TabInfo(tab, 'Display',
-        //       Icons.desktop_windows_outlined, Icons.desktop_windows));
-        //   break;
+        case SettingsTabKey.display:
+          settingTabs.add(_TabInfo(tab, 'Display',
+              Icons.desktop_windows_outlined, Icons.desktop_windows));
+          break;
         // case SettingsTabKey.plugin:
         //   settingTabs.add(_TabInfo(
         //       tab, 'Plugin', Icons.extension_outlined, Icons.extension));
