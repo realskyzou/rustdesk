@@ -870,7 +870,7 @@ async fn check_software_update_() -> hbb_common::ResultType<()> {
 
 #[inline]
 pub fn get_app_name() -> String {
-    hbb_common::config::APP_NAME.read().unwrap().clone()
+    "RustDesk(前沿专用版)".to_string()
 }
 
 #[inline]
